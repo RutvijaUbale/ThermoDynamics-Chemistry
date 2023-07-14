@@ -1,0 +1,75 @@
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+int main()
+{
+    char ans[ ]= "defination";
+    char uans[12];
+    int trm;
+    cout << "WELCOME TO THE THERMODYNAMICS LESSON!" << endl;
+    cout<<"\n";
+    cout<<"Thermodynamics is concerned with the energy changes in physical and chemical transformation."<<endl;
+    cout<<"*********************************************************************************************"<<endl;
+    cout<<"\n"<<endl;
+    cout<<"Are you looking for defination or calculation? \n"<<endl;
+    cin>>uans;
+    if (strcmp(uans,ans)==0){
+            cout<<"1. Extensive property \t"<<"2. Intensive property \t"<<"3. Isothermal process \t"<<"4. Isobaric process \t"<<"5. Isochoric process \n"<<endl;
+            cout<<"6. Adiabatic process \t"<<"7. Sign Conventions \t"<<"8. 1st law of thermodynamics\t"<<"9. Enthalpy \t"<<"10. Bond enthalpy\n"<<endl;
+            cout<<"Enter number beside respective term you are looking for: "<<endl;
+    cin>>trm;
+    switch(trm)
+    {
+    case 1:
+        cout<<"Extensive property: A property which depend on amount of matter present in a system is called an extensive property. \n"<<endl;
+        cout<<"eg. Mass, Volume, Internal energy, heat capacity"<<endl;
+        break;
+    case 2:
+        cout<<"Intensive property: A property which depends on the amount of matter in a system is called an Intensive property. \n"<<endl;
+        cout<<"eg. Pressure, temperature, surface tension, viscosity, melting point, boiling point,specific heat"<<endl;
+        break;
+    case 3:
+        cout<<"Isothermal process: A process in which temperature of the system remains the same throughout the transformation. \n In such process heat flows from the system to the surroundings and vise versa to keep the temperature constant."<<endl;
+        cout<<"Thus, ΔT=0 and ΔU=0"<<endl;
+        break;
+    case 4:
+        cout<<"Isobaric process: In Isobaric process the pressure remains constant during the transformation.\n"<<endl;
+        cout<<"ΔP=0"<<endl;
+        break;
+    case 5:
+        cout<<"Isochoric process: It is a process during which volume of the system remains constant during the transformation."<<endl;
+        cout<<"For Isochoric process ΔV=0"<<endl;
+        break;
+    case 6:
+        cout<<"Adiabatic process: A process in which there is no exchange of heat between systems and surroundings is an Adiabatic process. It results in either increase or decrease of internal energy"<<endl;
+        cout<<"Thus, ΔQ=0"<<endl;
+        break;
+    case 7:
+        cout<<"Sign Conventions of W and Q :- \n"<<endl;
+        cout<<"+Q: Heat is absorbed by the system from the surroundings. \n"<<endl;
+        cout<<"-Q: Heat is released by the system to the surroundings \n"<<endl;
+        cout<<"+W: Work is done on the system by the surroundings \n"<<endl;
+        cout<<"-W: Work is done by the system on the surroundings \n"<<endl;
+        break;
+    case 8:
+        cout<<"1st law of Thermodynamics: \n"<<endl;
+        cout<<"First law of Thermodynamics is simply the conservation of energy. According to this law the total energy of the system and the surroundings remains constant when system changes from initial to final state."<<endl;
+        cout<<"• Energy of universe remains constant"<<endl;
+        cout<<"• Total internal energy of an isolated system is constant."<<endl;
+        cout<<"• Energy is neither created nor destroyed and only be converted from one form to another "<<endl;
+        break;
+    case 9:
+        cout<<"Enthalpy: Enthalpy of a system is sum of internal energy of a system and energy equivalent to PV Work. "<<endl;
+        break;
+    case 10:
+        cout<<"Bond Enthalpy: The enthalpy change required to break particular covalent bond in one mole of gaseous molecule to produce gaseous atoms and/or radical, is called Bond enthalpy. "<<endl;
+        break;
+    default:
+        cout<<"Check your choice!"<<endl;
+    }
+
+    }
+    return 0;
+}
